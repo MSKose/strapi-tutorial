@@ -75,5 +75,24 @@ Note: here $lte means less than or equal to see more [here](https://docs.strapi.
     baseUrl/api/appName?filters[avgPrice][$lte]=30
 ```
 
+## Authentication
+
+### registering a user
+To register you have to send a post reqeust to the following url
+```
+    baseUrl/api/auth/local/register
+```
+
+### depending on your required fields you'll then send a json. Something like this:
+```
+{
+    "username": "Example",
+    "email": "example@example.com",
+    "password": "password"
+}
+```
+
+### after sending it, you'll get a jwt
+
 ## Acknowledgements
 - Tutorial source: [Laith Academy](https://www.youtube.com/watch?v=vcopLqUq594&t=10s)
